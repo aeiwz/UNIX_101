@@ -1,6 +1,80 @@
 # UNIX_101
 UNIX practise for HiTech-DS
 
+##Install miniconda 
+
+source: https://docs.conda.io/projects/miniconda/en/latest/
+
+
+
+### Download miniconda (for Linux)
+```
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+### 2. Install miniconda
+```
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+### 3. Create environment
+```
+conda create -n unix101 python=3.7
+```
+### 4. Activate environment
+```
+conda activate unix101
+```
+
+### install miniconda for Windows
+```
+```
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+```
+```
+### Download miniconda (for Windows)
+```
+```
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+```
+### 1. Install miniconda
+```
+Miniconda3-latest-Windows-x86_64.exe
+```
+### 2. Create environment
+```
+conda create -n unix101 python=3.7
+```
+### 3. Activate environment
+```
+conda activate unix101
+```
+
+## insta;; miniconda for Mac
+```
+```
+https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
+```
+```
+## 1. Download miniconda (for Mac)
+```
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
+```
+### 2. Install miniconda
+```
+bash Miniconda3-latest-MacOSX-x86_64.pkg
+```
+### 3. Create environment
+```
+conda create -n unix101 python=3.7
+```
+### 4. Activate environment
+```
+conda activate unix101
+```
+
+
+
 ## 1. Basic commands
 ### 1.1. pwd
 Print working directory
