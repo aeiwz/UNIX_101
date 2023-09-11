@@ -565,3 +565,142 @@ Show what revision and author last modified each line of a file
 git blame
 ```
 
+## 9. nano
+### 9.1. nano
+Nano's ANOther editor, an enhanced free Pico clone
+```
+nano
+```
+### 9.2. Ctrl + O
+Write out the current file contents
+```
+Ctrl + O
+```
+### 9.3. Ctrl + X
+Exit nano
+```
+Ctrl + X
+```
+### 9.4. Ctrl + G
+Display the help text
+```
+Ctrl + G
+```
+### 9.5. Ctrl + K
+Cut the current line and store it in the cutbuffer
+```
+Ctrl + K
+```
+### 9.6. Ctrl + U
+Uncut from the cutbuffer into the current line
+```
+Ctrl + U
+```
+### 9.7. Ctrl + W
+Search for a string or a regular expression
+```
+Ctrl + W
+```
+### 9.8. Ctrl + C
+Display current cursor position
+```
+Ctrl + C
+```
+### 9.9. Ctrl + \
+Search and replace
+```
+Ctrl + \
+```
+### 9.10. Ctrl + T
+Check spelling of the current file
+```
+Ctrl + T
+```
+### 9.11. Ctrl + J
+Justify the current paragraph
+```
+Ctrl + J
+```
+### 9.12. Ctrl + R
+Insert another file into the current one
+```
+Ctrl + R
+```
+### 9.13. Ctrl + Y
+Move to the previous screen
+```
+Ctrl + Y
+```
+### 9.14. Ctrl + V
+Move to the next screen
+```
+Ctrl + V
+```
+### 9.15. Ctrl + _
+Go to line and column number
+```
+Ctrl + _
+```
+### 9.16. Ctrl + A
+Go to the beginning of the current line
+```
+Ctrl + A
+```
+### 9.17. Ctrl + E
+Go to the end of the current line
+```
+Ctrl + E
+```
+### 9.18. Ctrl + P
+Move to the previous line
+```
+Ctrl + P
+```
+### 9.19. Ctrl + N
+Move to the next line
+```
+Ctrl + N
+```
+### 9.20. Ctrl + F
+Move forward one character
+```
+Ctrl + F
+```
+### 9.21. Ctrl + B
+Move backward one character
+```
+Ctrl + B
+```
+### 9.22. Ctrl + Space
+Set the mark
+```
+Ctrl + Space
+```
+### 9.23. Alt + Space
+Move to the previous word
+```
+Alt + Space
+```
+### 9.24. Alt + 6
+Copy the current line and store it in the cutbuffer
+```
+Alt + 6
+```
+### 9.25. Alt + 7
+Cut the current line and store it in the cutbuffer
+```
+Alt + 7
+```
+### 9.26. Alt + 8
+Paste the cutbuffer into the current line
+```
+Alt + 8
+```
+### 9.27. Alt + U
+Undo the last operation
+```
+Alt + U
+```
+
+
+
