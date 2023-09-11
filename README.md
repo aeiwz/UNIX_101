@@ -43,12 +43,11 @@ conda create -n unix101 python=3.7
 ```
 conda activate unix101
 ```
-
 # install miniconda for Mac
 ```
 https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
 ```
-## 1. Download miniconda (for Mac)
+## 1. Download miniconda
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
 ```
