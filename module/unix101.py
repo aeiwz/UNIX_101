@@ -33,6 +33,7 @@ class random_data:
         
         
         return df
+
     
     
 class analyse_:
@@ -92,6 +93,129 @@ class analyse_:
         report = classification_report(y_test, yhat)
         
         return print(report)
+    
+    
+    
+class data_ana():
+    '''flow chart
+    1. get data from scikit-learn
+    2. create learning model
+    3. train model
+    4. predict
+    5. evaluate
+    6. save model
+    7. load model
+    8. make prediction'''
+    
+    def get_data(self):
+        '''get data from scikit-learn
+        return dataframe
+        '''
+        from sklearn.datasets import load_iris
+        iris = load_iris()
+        X = iris.data
+        y = iris.target
+        
+        # create dataframe
+        df = pd.DataFrame(X, columns=iris.feature_names)
+        df['target'] = y
+        
+        return df
+    
+    def create_model(self, df=None):
+        '''create learning model
+        return model
+        '''
+        from sklearn.model_selection import train_test_split
+        from sklearn.linear_model import LogisticRegression
+        
+        #separate labels and data
+        labels = df['target']
+        data = df.drop('target', axis=1)
+        
+        #split data
+        X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.4, random_state=2)
+        
+        #logistic regression
+        model = LogisticRegression(solver='lbfgs')
+        model.fit(X_train, y_train)
+        
+        return model
+
+    def predict(self, model=None, df=None):
+        '''predict
+        return yhat'''
+        #predict
+        yhat = model.predict(df)
+        
+        return yhat
+    
+    def evaluate(self, model=None, df=None):
+        '''evaluate
+        return report
+        '''
+        from sklearn.metrics import confusion_matrix
+        from sklearn.metrics import classification_report
+        from sklearn.metrics import roc_curve
+        from sklearn.metrics import roc_auc_score
+        from matplotlib import pyplot
+        from sklearn.metrics import precision_recall_curve
+        from sklearn.metrics import f1_score
+        from sklearn.metrics import auc
+        from sklearn.metrics import average_precision_score
+        
+        #separate labels and data
+        labels = df['target']
+        data = df.drop('target', axis=1)
+        
+        #predict
+        yhat = model.predict(data)
+        
+        #report
+        report = classification_report(labels, yhat)
+        
+        return print(report)
+    
+    def save_model(self, model=None, filename=None):
+        import pickle
+        pickle.dump(model, open(filename, 'wb'))
+        
+    def load_model(self, filename=None):
+        import pickle
+        model = pickle.load(open(filename, 'rb'))
+        
+        return model
+    
+    def make_prediction(self, model=None, df=None):
+        #predict
+        yhat = model.predict(df)
+        
+        return yhat
+    
+    def main(self):
+        #get data
+        df = self.get_data()
+        
+        #create model
+        model = self.create_model(df)
+        
+        #save model
+        self.save_model(model, 'model.pkl')
+        
+        #load model
+        model = self.load_model('model.pkl')
+        
+        #make prediction
+        yhat = self.make_prediction(model, df)
+        
+        #evaluate
+        self.evaluate(model, df)
+        
+        return yhat
+    
+    
+    
+    
     
     
     
