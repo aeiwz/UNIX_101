@@ -1,5 +1,4 @@
 
-Certainly! Here are five UNIX assignments that cover basic commands along with answers:
 
 **Assignment 1: File and Directory Basics**
 
@@ -159,4 +158,4 @@ su [username]
 cat secret.txt
 ```
 
-These assignments cover a range of basic UNIX commands and concepts, allowing students to practice and reinforce their knowledge of essential UNIX operations.
+
