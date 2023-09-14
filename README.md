@@ -10,60 +10,50 @@ source: https://docs.conda.io/projects/miniconda/en/latest/
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
-## 1. Install miniconda
+## Install miniconda
 ```
 bash Miniconda3-latest-Linux-x86_64.sh
-```
-## 2. Create environment
-```
-conda create -n unix101 python=3.7
-```
-## 3. Activate environment
-```
-conda activate unix101
 ```
 
 # install miniconda for Windows
 ```
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 ```
-## 1. Download miniconda (for Windows)
+## Download miniconda (for Windows)
 ```
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 ```
-## 2. Install miniconda
+## Install miniconda
 ```
 Miniconda3-latest-Windows-x86_64.exe
 ```
-## 3. Create environment
-```
-conda create -n unix101 python=3.7
-```
-## 4. Activate environment
-```
-conda activate unix101
-```
+
 # install miniconda for Mac
 ```
 https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
 ```
-## 1. Download miniconda
+## Download miniconda
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
 ```
-## 2. Install miniconda
+## Install miniconda
 ```
 bash Miniconda3-latest-MacOSX-x86_64.pkg
 ```
-## 3. Create environment
+
+# Enveronment management
+## Create environment (Python environment)
 ```
-conda create -n unix101 python=3.7
+conda create -n unix101 python=3.11
 ```
-## 4. Activate environment
+## Activate environment
 ```
 conda activate unix101
 ```
-
+## Deactivate enveroment
+```
+conda deactivate unix101
+```
 
 
 ## 1. Basic commands
