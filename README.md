@@ -1,7 +1,7 @@
 # UNIX_101
 UNIX practise for HiTech-DS
 
-##Install miniconda 
+## Install miniconda 
 
 source: https://docs.conda.io/projects/miniconda/en/latest/
 
