@@ -25,7 +25,8 @@ Miniconda3-latest-Windows-x86_64.exe
 
 # install miniconda for Mac
 Download: https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
-\t or
+
+or
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
 ```
