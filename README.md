@@ -16,23 +16,16 @@ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 # install miniconda for Windows
-```
-https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-```
-## Download miniconda (for Windows)
-```
-https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-```
+Download: https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+
 ## Install miniconda
 ```
 Miniconda3-latest-Windows-x86_64.exe
 ```
 
 # install miniconda for Mac
-```
-https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
-```
-## Download miniconda
+Download: https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
+or
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
 ```
