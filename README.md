@@ -64,147 +64,147 @@ ls
 ### 1.3. cd
 Change directory
 ```
-cd
+cd ./directory
 ```
 ### 1.4. mkdir
 Make directory
 ```
-mkdir
+mkdir ./new_directory
 ```
 ### 1.5. touch
 Create file
 ```
-touch
+touch ./new_file
 ```
 ### 1.6. cp
 Copy file or directory
 ```
-cp
+cp /path/to/file /path/to/new/file
 ```
 ### 1.7. mv
 Move file or directory
 ```
-mv
+mv /path/to/file /path/to/new/file
 ```
 ### 1.8. rm
 Remove file or directory
 ```
-rm
+rm /path/to/file
 ```
 ### 1.9. cat
 Concatenate files and print on the standard output
 ```
-cat
+cat /path/to/file
 ```
 ### 1.10. less
 Opposite of more
 ```
-less
+less /path/to/file
 ```
 ### 1.11. head
 Output the first part of files
 ```
-head
+head /path/to/file
 ```
 ### 1.12. tail
 Output the last part of files
 ```
-tail
+tail /path/to/file
 ```
 ### 1.13. grep
 Print lines matching a pattern
 ```
-grep
+grep /path/to/file pattern 
 ```
 ### 1.14. wc
 Print newline, word, and byte counts for each file
 ```
-wc
+wc /path/to/file 
 ```
 ### 1.15. sort
 Sort lines of text files
 ```
-sort
+sort /path/to/file 
 ```
 ### 1.16. uniq
 Report or omit repeated lines
 ```
-uniq
+uniq /path/to/file
 ```
 ### 1.17. cut
 Remove sections from each line of files
 ```
-cut
+cut /path/to/file
 ```
 ### 1.18. paste
 Merge lines of files
 ```
-paste
+paste /path/to/file
 ```
 ### 1.19. join
 Join lines of two files on a common field
 ```
-join
+join /path/to/file /path/to/file 
 ```
 ### 1.20. diff
 Compare files line by line
 ```
-diff
+diff /path/to/file /path/to/file 
 ```
 ### 1.21. tr
 Translate or delete characters
 ```
-tr
+tr /path/to/file /path/to/file
 ```
 ### 1.22. sed
 Stream editor for filtering and transforming text
 ```
-sed
+sed /path/to/file /path/to/file
 ```
 ### 1.23. awk
 Pattern-directed scanning and processing language
 ```
-awk
+awk /path/to/file /path/to/file
 ```
 ### 1.24. chmod
 Change the mode of a file
 ```
-chmod
+chmod options permissions /path/to/file
 ```
 ### 1.25. chown
 Change file owner and group
 ```
-chown
+chown options owner:group /path/to/file
 ```
 ### 1.26. chgrp
 Change group ownership
 ```
-chgrp
+chgrp options group /path/to/file 
 ```
 ### 1.27. alias
 Create an alias
 ```
-alias
+alias 
 ```
 ### 1.28. source
 Execute commands from a file
 ```
-source
+source 
 ```
 ### 1.29. history
 Command History
 ```
-history
+history 
 ```
 ### 1.30. echo
 Display a line of text
 ```
-echo
+echo 'Hello World'
 ```
 ### 1.31. export
 Set an environment variable
 ```
-export
+export 'Hello World'
 ```
 ### 1.32. env
 Display, set, or remove environment variables
@@ -299,18 +299,6 @@ zdiff
 ### 3.5. Absolute path
 ```
 /
-```
-### 3.6. Relative path
-```
-.
-```
-### 3.7. Hidden file
-```
-.
-```
-### 3.8. File extension
-```
-.
 ```
 
 ## 4. File permissions
