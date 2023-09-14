@@ -328,3 +328,382 @@ sort -r sort.txt | uniq
 
 ---
 
+**Assignment 11: File Statistics**
+
+**Objective:** To practice file statistics using `wc` and `du`.
+
+**Instructions:**
+
+1. Create a new file named "stats.txt" in "unix_assignment" and add the following text:
+   ```
+   This is a sample text file.
+   Welcome to UNIX.
+   UNIX is powerful!
+   ```
+2. Display the number of lines in "stats.txt."
+
+3. Display the number of words in "stats.txt."
+
+4. Display the number of characters in "stats.txt."
+
+5. Display the size of "stats.txt."
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo "This is a sample text file." > stats.txt
+echo "Welcome to UNIX." >> stats.txt
+echo "UNIX is powerful!" >> stats.txt
+
+# Display the number of lines
+wc -l stats.txt
+
+# Display the number of words
+wc -w stats.txt
+
+# Display the number of characters
+wc -c stats.txt
+
+# Display the size
+du -h stats.txt
+```
+
+---
+
+**Assignment 12: File Permissions**
+
+**Objective:** To practice file permission manipulation.
+
+**Instructions:**
+
+1. Create a new file named "permissions.txt" in "unix_assignment."
+
+2. Change the permissions of "permissions.txt" so that only the owner can read and write to it.
+
+3. Attempt to open "permissions.txt" using a different user or switch to a different user to verify the permissions.
+
+**Answers:**
+
+```bash
+# Create the file
+touch permissions.txt
+
+# Change permissions (read and write only for the owner)
+chmod 600 permissions.txt
+
+# Attempt to open the file as a different user (replace [username] with the actual username)
+su [username]
+cat permissions.txt
+```
+
+---
+
+**Assignment 13: Creat a Shell Script**
+
+**Objective:** To practice shell scripting.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   echo "Hello, world!"
+   ```
+2. Make "script.sh" executable.
+
+3. Run "script.sh."
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'echo "Hello, world!"' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh
+```
+
+---
+
+**Assignment 14: Create a Shell Script with Arguments**
+
+**Objective:** To practice shell scripting with arguments.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   echo "Hello, $1!"
+   ```
+2. Make "script.sh" executable.
+
+3. Run "script.sh" with your name as an argument.
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'echo "Hello, $1!"' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh [your name]
+```
+
+---
+
+**Assignment 15: Create a Shell Script with User Input**
+
+**Objective:** To practice shell scripting with user input.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   echo "What is your name?"
+   read name
+   echo "Hello, $name!"
+   ```
+2. Make "script.sh" executable.
+
+3. Run "script.sh."
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'echo "What is your name?"' >> script.sh
+echo 'read name' >> script.sh
+echo 'echo "Hello, $name!"' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh
+```
+
+---
+
+**Assignment 16: Create a Shell Script with Conditional Logic**
+
+**Objective:** To practice shell scripting with conditional logic.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   echo "What is your name?"
+   read name
+   if [ "$name" == "John" ]; then
+     echo "Hello, John!"
+   else
+     echo "Hello, $name!"
+   fi
+   ```
+
+2. Make "script.sh" executable.
+
+3. Run "script.sh" with your name as an argument.
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'echo "What is your name?"' >> script.sh
+echo 'read name' >> script.sh
+echo 'if [ "$name" == "John" ]; then' >> script.sh
+echo '  echo "Hello, John!"' >> script.sh
+echo 'else' >> script.sh
+echo '  echo "Hello, $name!"' >> script.sh
+echo 'fi' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh [your name]
+```
+
+---
+
+**Assignment 17: Create a Shell Script with a Loop**
+
+**Objective:** To practice shell scripting with a loop.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   for i in {1..10}
+   do
+     echo "Hello, world!"
+   done
+   ```
+
+2. Make "script.sh" executable.
+
+3. Run "script.sh."
+
+**Answers:**
+
+```bash
+# Create and edit the file
+
+echo '#!/bin/bash' > script.sh
+echo 'for i in {1..10}' >> script.sh
+echo 'do' >> script.sh
+echo '  echo "Hello, world!"' >> script.sh
+echo 'done' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh
+```
+
+---
+
+**Assignment 18: Create a Shell Script with a Function**
+
+**Objective:** To practice shell scripting with a function.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   function hello {
+     echo "Hello, world!"
+   }
+   hello
+   ```
+
+2. Make "script.sh" executable.
+
+3. Run "script.sh."
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'function hello {' >> script.sh
+echo '  echo "Hello, world!"' >> script.sh
+echo '}' >> script.sh
+echo 'hello' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh
+```
+
+---
+
+**Assignment 19: Create a Shell Script with an sequence of commands and arguments**
+
+**Objective:** To practice shell scripting with an sequence of commands and arguments.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   echo "What is your name?"
+   read name
+   if [ "$name" == "John" ]; then
+     echo "Hello, John!"
+   else
+     echo "Hello, $name!"
+   fi
+   ```
+
+2. Make "script.sh" executable.
+
+3. Run "script.sh" with your name as an argument.
+
+**Answers:**
+
+```bash
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'echo "What is your name?"' >> script.sh
+echo 'read name' >> script.sh
+echo 'if [ "$name" == "John" ]; then' >> script.sh
+echo '  echo "Hello, John!"' >> script.sh
+echo 'else' >> script.sh
+echo '  echo "Hello, $name!"' >> script.sh
+echo 'fi' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh [your name]
+```
+
+---
+
+**Assignment 20: Create a Shell Script with a Loop and conditional logic function**
+
+**Objective:** To practice shell scripting with a loop and conditional logic function.
+
+**Instructions:**
+
+1. Create a new file named "script.sh" in "unix_assignment" and add the following text:
+   ```bash
+   #!/bin/bash
+   function hello {
+     echo "Hello, world!"
+   }
+   for i in {1..10}
+   do
+     hello
+   done
+   ```
+
+2. Make "script.sh" executable.
+
+3. Run "script.sh."
+
+**Answers:**
+
+```bash
+
+# Create and edit the file
+echo '#!/bin/bash' > script.sh
+echo 'function hello {' >> script.sh
+echo '  echo "Hello, world!"' >> script.sh
+echo '}' >> script.sh
+echo 'for i in {1..10}' >> script.sh
+echo 'do' >> script.sh
+echo '  hello' >> script.sh
+echo 'done' >> script.sh
+
+# Make the file executable
+chmod +x script.sh
+
+# Run the script
+./script.sh
+```
+
+---
+
+
