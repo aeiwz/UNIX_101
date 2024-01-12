@@ -3,7 +3,7 @@ UNIX practise for HiTech-DS
 
 
 <!-- pagebreak -->
-[link](./Assignment.md)
+[Assignment](./Assignment.md)
 
 ## Install miniconda 
 
