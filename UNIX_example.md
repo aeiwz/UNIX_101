@@ -1,4 +1,3 @@
-Certainly! Let's go through a few examples to illustrate the usage of the commands mentioned:
 
 1. **Working with Directories:**
    - Check the current directory:
@@ -91,4 +90,113 @@ Certainly! Let's go through a few examples to illustrate the usage of the comman
      kill PID
      ```
 
-These are basic examples to help you understand how to use the commands. Feel free to explore and experiment with different options and parameters for each command.
+Absolutely! Let's delve into some more examples with additional commands:
+
+1. **Wildcards:**
+   - Use wildcards (`*` for any characters, `?` for a single character) for flexible file matching:
+     ```bash
+     ls *.txt
+     ```
+
+2. **File Manipulation:**
+   - Concatenate and display multiple files:
+     ```bash
+     cat file1.txt file2.txt
+     ```
+
+   - View the beginning or end of a file:
+     ```bash
+     head file.txt
+     tail file.txt
+     ```
+
+   - Count lines, words, and characters in a file:
+     ```bash
+     wc file.txt
+     ```
+
+3. **Archiving and Compression:**
+   - Create a compressed tar archive:
+     ```bash
+     tar -czvf archive.tar.gz directory/
+     ```
+
+   - Extract files from a tar archive:
+     ```bash
+     tar -xzvf archive.tar.gz
+     ```
+
+4. **Networking:**
+   - Check network connectivity:
+     ```bash
+     ping example.com
+     ```
+
+   - Display network interfaces:
+     ```bash
+     ifconfig
+     ```
+
+   - Retrieve information about your IP address:
+     ```bash
+     curl ifconfig.me
+     ```
+
+5. **System Information:**
+   - Display system information:
+     ```bash
+     uname -a
+     ```
+
+   - Show free and used memory:
+     ```bash
+     free -h
+     ```
+
+   - Display disk space usage:
+     ```bash
+     df -h
+     ```
+
+6. **Text Processing:**
+   - Sort lines of text:
+     ```bash
+     sort file.txt
+     ```
+
+   - Remove duplicate lines from a sorted file:
+     ```bash
+     uniq sorted_file.txt
+     ```
+
+   - Replace text in a file:
+     ```bash
+     sed 's/old_text/new_text/' file.txt
+     ```
+
+7. **Monitoring Processes:**
+   - Monitor system resources in real-time:
+     ```bash
+     top
+     ```
+
+   - Display the last few lines of a log file:
+     ```bash
+     tail -f /var/log/syslog
+     ```
+
+8. **User Management:**
+   - Display information about the current user:
+     ```bash
+     whoami
+     ```
+
+   - Change your user password:
+     ```bash
+     passwd
+     ```
+
+   - Add a new user:
+     ```bash
+     sudo adduser new_user
+     ```
