@@ -24,6 +24,7 @@
      ```bash
      ls -l
      ```
+   The "ls -l" command is used to list files and directories in long format, providing details such as permissions, ownership, size, and modification date.
 
 2. **Working with Files:**
    - Create a new empty file:
@@ -125,6 +126,7 @@ Absolutely! Let's delve into some more examples with additional commands:
      ```bash
      tar -xzvf archive.tar.gz
      ```
+   The command "tar -xzvf archive.tar.gz" is used to extract the contents of a compressed tar archive named "archive.tar.gz". Here's a breakdown of the options:"c": Compress files. "x": Extract files from the archive."z": Filter the archive through gzip to decompress it."v": Verbose mode, which displays progress and filenames as they're extracted."f": Use the following archive file. In this case, "archive.tar.gz" is the archive file.
 
 4. **Networking:**
    - Check network connectivity:
